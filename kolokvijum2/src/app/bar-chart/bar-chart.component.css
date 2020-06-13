@@ -1,0 +1,11 @@
+::ng-deep
+.bar {
+    fill: #b8d3ff;
+    stroke: #6aa3ff;
+}
+
+::ng-deep
+.red-bar {
+    fill: #ffb8b8;
+    stroke: #ff6a6a;
+}

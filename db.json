@@ -1,0 +1,58 @@
+{
+    "users": [
+          {
+             "id":1,
+             "username": "admin",
+             "password": "admin",
+             "roles": ["ROLE_ADMIN"]
+          },
+          {
+             "id":2,
+             "username": "pera",
+             "password": "pera123",
+             "roles": ["ROLE_USER"]
+          },
+          {
+             "id":3,
+             "username": "marko",
+             "password": "marko123",
+             "roles": ["ROLE_USER"]
+          },
+          {
+             "id":4,
+             "username": "mira",
+             "password": "mira123",
+             "roles": ["ROLE_USER"]
+          }
+    ],
+    "items": [
+       {
+          "id":1,
+          "title": "Car",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/07-08_Chevrolet_Suburban_LT.jpg",
+          "description": "",
+          "price":4500.0
+       },
+       {
+          "id":2,
+          "title": "Cell phone",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/DynaTAC8000X.jpg",
+          "description": "The Motorola DynaTAC 8000X. In 1984, it became the first commercially available handheld cellular mobile phone.",
+          "price": 100.0
+       },
+       {
+          "id":3,
+          "title": "Laptop",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Compaqarmada7800.jpg",
+          "description": "",
+          "price": 320.0
+       },
+       {
+          "id":4,
+          "title": "Tablet",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Asus_Transformer_Pad_TF701T_Tablet_and_Keyboard_Dock.png",
+          "description": "Asus Transformer Pad, a 2-in-1 detachable tablet, powered by the Android operating system.",
+          "price": 250.0
+       }
+    ]
+ }

@@ -1,0 +1,42 @@
+<div class="example-container">
+  <h2>Items</h2>
+
+  <div
+    cdkDropList
+    #todoList="cdkDropList"
+    [cdkDropListData]="items"
+    [cdkDropListConnectedTo]="[doneList]"
+    class="example-list"
+    (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let item of items" cdkDrag>{{item.title}}
+      <img width="200px" height="200px" *cdkDragPreview [src]="item.url" [alt]="item.title">
+    </div>
+    
+  </div>
+</div>
+
+<div class="example-container">
+  <h2>Sale</h2>
+
+  <div
+    cdkDropList
+    #doneList="cdkDropList"
+    [cdkDropListData]="sale"
+    [cdkDropListConnectedTo]="[todoList]"
+    class="example-list"
+    (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let item of sale" cdkDrag>{{item.title}}
+      <div *cdkDragPreview>
+        <div>{{item.title}}</div>
+        <img width="200px" height="200px" [src]="item.url" [alt]="item.title">
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+
+<div>
+  Popust: <input type="number" min="1" max="100" [(ngModel)]="saleInput">
+  <button (click)="saleItems()">Snizi cenu</button>
+</div>

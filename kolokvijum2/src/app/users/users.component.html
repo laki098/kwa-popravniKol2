@@ -1,0 +1,22 @@
+<button *ngIf="loginService.validateRoles(['ROLE_ADMIN'])">Dodavanje novog</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Roles</th>
+            <th>Akcije</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let u of users">
+            <td>{{u["username"]}}</td>
+            <td>{{u["roles"]}}</td>
+            <td>
+                <button *ngIf="loginService.validateRoles(['ROLE_ADMIN'])">Brisanje</button>
+                <button *ngIf="loginService.validateRoles(['ROLE_ADMIN'])">Izmena</button>
+                <button>Detalji</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
